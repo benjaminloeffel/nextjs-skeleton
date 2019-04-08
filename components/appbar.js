@@ -52,7 +52,7 @@ const AppBar = () => {
           }
 
           a:hover {
-            color: yellow;
+            color: #ef233c;
           }
         `}
       </style>

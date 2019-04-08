@@ -14,10 +14,6 @@ class Layout extends Component {
         <div className="page-content">{children}</div>
         <Footer />
         <style global jsx>{`
-          body {
-            margin: 0;
-          }
-
           .page-content {
             padding: 20px 10px;
           }

@@ -4,7 +4,7 @@ import { TypographyStyle, GoogleFont } from 'react-typography';
 import typography from '../utils/typography';
 import { string } from 'prop-types';
 
-const defaultDescription = '';
+const defaultDescription = 'This is the default description';
 const defaultOGURL = '';
 const defaultOGImage = '';
 

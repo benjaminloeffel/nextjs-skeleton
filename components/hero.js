@@ -10,7 +10,7 @@ const Hero = props => {
         .hero {
           position: relative;
           height: 400px;
-          background: tomato;
+          background: #323031;
         }
 
         .inner {
@@ -25,6 +25,7 @@ const Hero = props => {
         .page-title {
           color: #fff;
           text-transform: uppercase;
+          margin: 0;
         }
       `}</style>
     </div>
