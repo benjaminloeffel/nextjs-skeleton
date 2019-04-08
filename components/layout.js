@@ -5,13 +5,13 @@ import Footer from './footer';
 
 class Layout extends Component {
   render() {
-    const pageTitle = this.props.title;
+    const { children } = this.props;
 
     return (
       <div>
-        <Head title={pageTitle} />
-        <Header title={pageTitle} />
-        <div className="page-content">Hello World</div>
+        <Head title={this.props.title} />
+        <Header title={this.props.title} />
+        <div className="page-content">{children}</div>
         <Footer />
         <style global jsx>{`
           body {
