@@ -4,7 +4,7 @@ const Hero = props => {
   return (
     <div className="hero">
       <div className="inner">
-        <h1>{props.title}</h1>
+        <h1 className="page-title">{props.title}</h1>
       </div>
       <style jsx>{`
         .hero {
@@ -18,9 +18,13 @@ const Hero = props => {
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          background: blue;
           padding: 15px;
           border-radius: 5px;
+        }
+
+        .page-title {
+          color: #fff;
+          text-transform: uppercase;
         }
       `}</style>
     </div>
