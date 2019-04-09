@@ -56,12 +56,14 @@ class LoginForm extends Component {
           />
           <a href="#">Forgot your password?</a>
         </div>
-        <Button
-          type="submit"
-          name="login"
-          text="Login"
-          disabled={!this.validateForm()}
-        />
+        <div className="text-center">
+          <Button
+            type="submit"
+            name="login"
+            text="Login"
+            disabled={!this.validateForm()}
+          />
+        </div>
         <style jsx>{`
           form {
           }
@@ -94,6 +96,10 @@ class LoginForm extends Component {
             float: right;
             font-size: 12px;
             text-decoration: none;
+          }
+
+          .text-center {
+            text-align: center;
           }
         `}</style>
       </form>
