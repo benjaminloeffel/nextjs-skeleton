@@ -10,12 +10,14 @@ class Layout extends Component {
     return (
       <div>
         <Head title={this.props.title} />
-        <Header title={this.props.title} />
+        <Header title={this.props.title} hasHero={this.props.hasHero} />
         <div className="page-content">{children}</div>
         <Footer />
         <style global jsx>{`
           .page-content {
-            padding: 20px 10px;
+             {
+              /* padding: 20px 10px; */
+            }
           }
         `}</style>
       </div>
