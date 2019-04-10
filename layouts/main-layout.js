@@ -15,9 +15,7 @@ class Layout extends Component {
         <Footer />
         <style global jsx>{`
           .page-content {
-             {
-              /* padding: 20px 10px; */
-            }
+            padding: 20px 10px;
           }
         `}</style>
       </div>
