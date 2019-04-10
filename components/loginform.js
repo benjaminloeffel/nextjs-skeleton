@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import Button from '../components/button';
+
+// Partials
+import Button from './partials/button';
+import Label from './partials/label';
+import Input from './partials/input';
 
 class LoginForm extends Component {
   constructor(props) {
@@ -36,8 +40,8 @@ class LoginForm extends Component {
     return (
       <form onSubmit={this.handleSubmit}>
         <div className="form-group">
-          <label htmlFor="email">E-mail</label>
-          <input
+          <Label for="email" text="E-mail" />
+          <Input
             type="text"
             id="email"
             placeholder="Enter your e-mail address..."
@@ -46,8 +50,8 @@ class LoginForm extends Component {
           />
         </div>
         <div className="form-group">
-          <label htmlFor="Password">Password</label>
-          <input
+          <Label for="password" text="Password" />
+          <Input
             type="password"
             id="password"
             placeholder="Enter your password..."
@@ -65,31 +69,8 @@ class LoginForm extends Component {
           />
         </div>
         <style jsx>{`
-          form {
-          }
-
           .form-group {
             margin-bottom: 30px;
-          }
-
-          label {
-            font-size: 12px;
-            text-transform: uppercase;
-            font-weight: bold;
-            display: block;
-          }
-
-          input {
-            display: inline-block;
-            width: 100%;
-            padding: 4px 8px;
-            border: 2px solid lightgray;
-            border-radius: 3px;
-          }
-
-          input:focus {
-            border: 2px solid darkgray;
-            outline: none;
           }
 
           a {
