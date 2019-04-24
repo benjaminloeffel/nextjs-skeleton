@@ -1,12 +1,12 @@
 import React from 'react';
+import { string } from 'prop-types';
 import NextHead from 'next/head';
 import { TypographyStyle, GoogleFont } from 'react-typography';
 import typography from '../utils/typography';
-import { string } from 'prop-types';
 
-const defaultDescription = 'This is the default description';
-const defaultOGURL = '';
-const defaultOGImage = '';
+const defaultDescription = 'This is the default description',
+  defaultOGURL = '',
+  defaultOGImage = '';
 
 const Head = props => (
   <NextHead>

@@ -51,6 +51,7 @@ yarn run start
 ## Built With
 
 - [ReactJS](https://github.com/facebook/react/)
+- [PropTypes](https://github.com/facebook/prop-types)
 - [NextJS](https://github.com/zeit/next.js/)
 - [CreateNextApp](https://github.com/segmentio/create-next-app)
 - [Next-Css](https://github.com/zeit/next-plugins/tree/master/packages/next-css)

@@ -11,9 +11,9 @@ const AppBar = () => {
   Router.events.on('routeChangeComplete', () => NProgress.done());
   Router.events.on('routeChangeError', () => NProgress.done());
 
-  const color__red = '#ef223c',
-    color__white = '#fff',
-    color__black = '#000';
+  const colorRed = '#ef223c',
+    colorWhite = '#fff',
+    colorBlack = '#000';
 
   return (
     <div className="appbar">
@@ -53,7 +53,7 @@ const AppBar = () => {
       <style jsx>
         {`
           .appbar {
-            background: ${color__black};
+            background: ${colorBlack};
             padding: 20px 10px;
           }
 
@@ -89,7 +89,7 @@ const AppBar = () => {
           a {
             display: block;
             position: relative;
-            color: ${color__white};
+            color: ${colorWhite};
             text-decoration: none;
           }
 
@@ -105,7 +105,7 @@ const AppBar = () => {
             bottom: 0;
             width: 100%;
             height: 2px;
-            background: ${color__red};
+            background: ${colorRed};
             transform: scaleX(0);
           }
 
@@ -120,7 +120,7 @@ const AppBar = () => {
             bottom: 0;
             height: 2px;
             width: 100%;
-            background: ${color__red};
+            background: ${colorRed};
           }
         `}
       </style>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Head from '../components/head';
 import Header from '../components/header';
 import Footer from '../components/footer';
@@ -71,5 +72,10 @@ class Layout extends Component {
     );
   }
 }
+
+Layout.propTypes = {
+  title: PropTypes.string.isRequired,
+  hasHero: PropTypes.bool
+};
 
 export default Layout;

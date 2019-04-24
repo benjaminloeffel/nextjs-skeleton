@@ -1,4 +1,5 @@
 import React from 'react';
+import { string } from 'prop-types';
 
 const Hero = props => {
   return (
@@ -30,6 +31,10 @@ const Hero = props => {
       `}</style>
     </div>
   );
+};
+
+Hero.propTypes = {
+  title: string
 };
 
 export default Hero;

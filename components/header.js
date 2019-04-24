@@ -1,18 +1,20 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import AppBar from '../components/appbar';
 import Hero from '../components/hero';
-
-function hasHero(props) {
-  return props.hasHero != false ? <Hero title={props.title} /> : null;
-}
 
 const Header = props => {
   return (
     <header>
       <AppBar />
-      {hasHero(props)}
+      {props.hasHero !== false ? <Hero title={props.title} /> : null}
     </header>
   );
+};
+
+Header.propTypes = {
+  hasHero: PropTypes.bool,
+  title: PropTypes.string.isRequired
 };
 
 export default Header;
