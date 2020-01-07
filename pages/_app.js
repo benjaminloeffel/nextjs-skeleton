@@ -1,6 +1,6 @@
-import React from 'react';
-import App, { Container } from 'next/app';
-import NextNProgress from '../components/nprogress';
+import React from "react";
+import App from "next/app";
+import NextNProgress from "../components/nprogress";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -17,10 +17,10 @@ class MyApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <Container>
+      <>
         <NextNProgress />
         <Component {...pageProps} />
-      </Container>
+      </>
     );
   }
 }
